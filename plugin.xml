@@ -12,5 +12,7 @@
     </config-file>
     <header-file src="src/ios/CordovaDownloaderPlugin.h"/>
     <source-file src="src/ios/CordovaDownloaderPlugin.m"/>
+    <header-file src="src/ios/SDNetworkActivityIndicator/SDNetworkActivityIndicator.h"/>
+    <source-file src="src/ios/SDNetworkActivityIndicator/SDNetworkActivityIndicator.m"/>
   </platform>
 </plugin>
