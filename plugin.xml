@@ -14,5 +14,36 @@
     <source-file src="src/ios/CordovaDownloaderPlugin.m"/>
     <header-file src="src/ios/SDNetworkActivityIndicator/SDNetworkActivityIndicator.h"/>
     <source-file src="src/ios/SDNetworkActivityIndicator/SDNetworkActivityIndicator.m"/>
+    <header-file src="src/ios/FKDownloader/FKConfigure.h"/>
+    <source-file src="src/ios/FKDownloader/FKConfigure.m"/>
+    <header-file src="src/ios/FKDownloader/FKDefine.h"/>
+    <source-file src="src/ios/FKDownloader/FKDefine.m"/>
+    <header-file src="src/ios/FKDownloader/FKDownloader.h"/>
+    <header-file src="src/ios/FKDownloader/FKDownloadExecutor.h"/>
+    <source-file src="src/ios/FKDownloader/FKDownloadExecutor.m"/>
+    <header-file src="src/ios/FKDownloader/FKDownloadManager.h"/>
+    <source-file src="src/ios/FKDownloader/FKDownloadManager.m"/>
+    <header-file src="src/ios/FKDownloader/FKHashHelper.h"/>
+    <source-file src="src/ios/FKDownloader/FKHashHelper.m"/>
+    <header-file src="src/ios/FKDownloader/FKMapHub.h"/>
+    <source-file src="src/ios/FKDownloader/FKMapHub.m"/>
+    <header-file src="src/ios/FKDownloader/FKReachability.h"/>
+    <source-file src="src/ios/FKDownloader/FKReachability.m"/>
+    <header-file src="src/ios/FKDownloader/FKResumeHelper.h"/>
+    <source-file src="src/ios/FKDownloader/FKResumeHelper.m"/>
+    <header-file src="src/ios/FKDownloader/FKSystemHelper.h"/>
+    <source-file src="src/ios/FKDownloader/FKSystemHelper.m"/>
+    <header-file src="src/ios/FKDownloader/FKTask.h"/>
+    <source-file src="src/ios/FKDownloader/FKTask.m"/>
+    <header-file src="src/ios/FKDownloader/FKTaskStorage.h"/>
+    <source-file src="src/ios/FKDownloader/FKTaskStorage.m"/>
+    <header-file src="src/ios/FKDownloader/NSArray+FKDownload.h"/>
+    <source-file src="src/ios/FKDownloader/NSArray+FKDownload.m"/>
+    <header-file src="src/ios/FKDownloader/NSData+FKDownload.h"/>
+    <source-file src="src/ios/FKDownloader/NSData+FKDownload.m"/>
+    <header-file src="src/ios/FKDownloader/NSMutableSet+FKDownload.h"/>
+    <source-file src="src/ios/FKDownloader/NSMutableSet+FKDownload.m"/>
+    <header-file src="src/ios/FKDownloader/NSString+FKDownload.h"/>
+    <source-file src="src/ios/FKDownloader/NSString+FKDownload.m"/>
   </platform>
 </plugin>
