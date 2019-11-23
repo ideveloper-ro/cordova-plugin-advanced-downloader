@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova-plugin-advanced-downloader" version="1.0.0">
-  <name>Advanced iOS Downloader plugin</name>
-  <description>
-    Cordova / Phonegap plugin for iOS smart downloading
-	</description>
-  <engines>
-    <engine name="cordova" version=">=4.0.0"/>
-  </engines>
-  <js-module src="www/advanced-downloader.js" name="downloader">
-    <clobbers target="cordova.plugin.downloader"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-advanced-downloader" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+  <name>cordova-plugin-advanced-downloader</name>
+  <js-module name="downloader" src="www/advanced-downloader.js">
+    <clobbers target="cordova.plugins.downloader" />
   </js-module>
   <platform name="ios">
-    <config-file target="config.xml" parent="/*">
+    <config-file parent="/*" target="config.xml">
       <feature name="CordovaDownloaderPlugin">
-        <param name="ios-package" value="CordovaDownloaderPlugin"/>
+        <param name="ios-package" value="CordovaDownloaderPlugin" />
       </feature>
     </config-file>
     <header-file src="src/ios/CordovaDownloaderPlugin.h"/>

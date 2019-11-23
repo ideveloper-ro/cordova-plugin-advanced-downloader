@@ -1,0 +1,22 @@
+{
+  "name": "cordova.plugins.downloader",
+  "version": "1.0.0",
+  "description": "A native Downloader Plugin for Cordova / PhoneGap.",
+  "cordova": {
+    "id": "cordova.plugins.downloader",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ideveloper-ro/cordova-plugin-advanced-downloader"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Liviu Macsen",
+  "license": "MIT"
+}
