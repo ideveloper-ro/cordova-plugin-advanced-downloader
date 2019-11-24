@@ -6,7 +6,7 @@
  * file that was distributed with this source code.
  */
 
-#import "SDNetworkActivityIndicator.h"
+#import "_SDNetworkActivityIndicator.h"
 
 @interface _SDNetworkActivityIndicator()
 {
