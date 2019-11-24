@@ -10,6 +10,10 @@
 #import "NSString+FKDownload.h"
 
 void checkURL(NSString *address) {
+    if (address == nil) {
+        return;
+    }
+    
     if (address.length == 0) {
         NSCAssert(NO, @"URL 地址不合法, 请填写正确的 URL!");
     }
