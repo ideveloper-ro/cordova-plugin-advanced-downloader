@@ -8,14 +8,14 @@
 
 #import "SDNetworkActivityIndicator.h"
 
-@interface SDNetworkActivityIndicator()
+@interface _SDNetworkActivityIndicator()
 {
     @private NSUInteger counter;
 }
 @end
 
 
-@implementation SDNetworkActivityIndicator
+@implementation _SDNetworkActivityIndicator
 
 + (instancetype) sharedActivityIndicator
 {

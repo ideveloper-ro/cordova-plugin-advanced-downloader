@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SDNetworkActivityIndicator : NSObject
+@interface _SDNetworkActivityIndicator : NSObject
 
 + (id)sharedActivityIndicator;
 - (void)startActivity;
