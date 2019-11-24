@@ -8,7 +8,6 @@ var exec = require('cordova/exec');
 module.exports = {
 
 	downloadFile: function(url, filePath, success, failure) {
-		console.log('aaaaaaaaa');
 		return exec(success, failure, 'CordovaDownloaderPlugin', 'downloadFile', [url, filePath]);
 	}
 
