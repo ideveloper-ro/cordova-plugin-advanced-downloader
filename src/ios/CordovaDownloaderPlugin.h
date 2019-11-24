@@ -3,6 +3,8 @@
 
 @interface CordovaDownloaderPlugin : CDVPlugin
 
+@property (nonatomic, strong) NSString *callbackId;
+
 - (void)downloadFile:(CDVInvokedUrlCommand*)command;
 
 @end
