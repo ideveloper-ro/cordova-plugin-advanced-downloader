@@ -14,10 +14,10 @@
     NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     FKConfigure *config = [[FKConfigure alloc] init];
     config.autoStart          = NO;
-    config.autoClearTask      = NO;
+    config.autoClearTask      = YES;
     config.backgroudExecute   = YES;
     config.fileChecksum       = NO;
-    config.allowCellular      = NO;
+    config.allowCellular      = YES;
     config.autoCoding         = YES;
     config.deleteFinishFile   = NO;
     config.calculateSpeedWithEstimated = YES;
