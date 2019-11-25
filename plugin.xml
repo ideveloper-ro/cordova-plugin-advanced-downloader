@@ -12,8 +12,8 @@
     </config-file>
     <header-file src="src/ios/CordovaDownloaderPlugin.h"/>
     <source-file src="src/ios/CordovaDownloaderPlugin.m"/>
-    <header-file src="src/ios/SDNetworkActivityIndicator/SDNetworkActivityIndicator.h"/>
-    <source-file src="src/ios/SDNetworkActivityIndicator/SDNetworkActivityIndicator.m"/>
+    <header-file src="src/ios/SDNetworkActivityIndicator/_SDNetworkActivityIndicator.h"/>
+    <source-file src="src/ios/SDNetworkActivityIndicator/_SDNetworkActivityIndicator.m"/>
     <header-file src="src/ios/FKDownloader/FKConfigure.h"/>
     <source-file src="src/ios/FKDownloader/FKConfigure.m"/>
     <header-file src="src/ios/FKDownloader/FKDefine.h"/>

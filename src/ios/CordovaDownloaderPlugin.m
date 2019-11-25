@@ -1,6 +1,6 @@
 #import "CordovaDownloaderPlugin.h"
 #import "CDVFile.h"
-#import "SDNetworkActivityIndicator.h"
+#import "_SDNetworkActivityIndicator.h"
 #import "FKDownloader.h"
 
 @interface CordovaDownloaderPlugin() <FKTaskDelegate>
