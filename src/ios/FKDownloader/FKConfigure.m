@@ -23,7 +23,7 @@
     config.calculateSpeedWithEstimated = YES;
     config.timeoutInterval      = 30;
     config.sessionIdentifier    = @"com.fk.downloader";
-    config.maximumExecutionTask = 3;
+    config.maximumExecutionTask = 1;
     config.speedRefreshInterval = 1;
     config.savePath     = [cachePath stringByAppendingPathComponent:@"com.fk.downloader/file"];
     config.resumeSavePath   = [cachePath stringByAppendingPathComponent:@"com.fk.downloader/resume"];
