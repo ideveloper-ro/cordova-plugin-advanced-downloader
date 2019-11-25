@@ -36,9 +36,6 @@
             FKTaskInfoResumeSavePath: [filePath stringByAppendingString:@"/resume"]
         }];
         
-//        NSLog(@"%@", [FKDownloadManager manager].configure.savePath);
-//        NSLog(@"%@", [FKDownloadManager manager].configure.resumeSavePath);
-//        NSLog(@"%@", [filePath stringByAppendingString:@"/file"]);
         
         [[FKDownloadManager manager] addTasksWithArray:tasks.copy];
         
@@ -62,6 +59,8 @@
 
         [[_SDNetworkActivityIndicator sharedActivityIndicator] stopActivity];
     } @catch (NSException *exception) {
+        CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Download error"];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         [[_SDNetworkActivityIndicator sharedActivityIndicator] stopActivity];
     }
 }
@@ -71,6 +70,11 @@
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:[NSString stringWithFormat:@"file://%@", task.filePath] forKey:@"file"];
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dictionary];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:self.callbackId];
+}
+
+-(void)downloader:(FKDownloadManager *)downloader errorTask:(FKTask *)task {
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Download error"];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:self.callbackId];
 }
 
